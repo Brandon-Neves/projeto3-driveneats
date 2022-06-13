@@ -24,25 +24,25 @@
     <main>
       <h2>Primeiro, seu prato</h2>
       <section class="secao-1">
-        <div class="produto">
+        <div id="prato1" class="produto" onclick="escolherPrato1()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$14,90</p>
         </div>
-        <div class="produto">
+        <div id="prato2" class="produto" onclick="escolherPrato2()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$12,90</p>
         </div>
-        <div class="produto">
+        <div id="prato3" class="produto" onclick="escolherPrato3()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$15,90</p>
         </div>
-        <div class="produto">
+        <div id="prato4" class="produto" onclick="escolherPrato4()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
@@ -51,68 +51,56 @@
       </section>
       <h2>Agora, sua bebida</h2>
       <section class="secao-2">
-        <div class="produto">
+        <div class="produto" id="bebida1" onclick="escolherBebida1()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$4,90</p>
         </div>
-        <div class="produto">
+        <div class="produto" id="bebida2" onclick="escolherBebida2()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$4,90</p>
         </div>
-        <div class="produto">
+        <div class="produto" id="bebida3" onclick="escolherBebida3()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$6,90</p>
         </div>
-        <div class="produto">
+        <div class="produto" id="bebida4" onclick="escolherBebida4()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$3,90</p>
         </div>
-        <div class="produto">
-          <img src="imagens/coquinha_gelada 1.png" alt="" />
-          <p>Coquinha gelada</p>
-          <p>Lata 350ml</p>
-          <p>R$2,90</p>
-        </div>
       </section>
       <h2>Por fim, sua sobremesa</h2>
       <section class="secao-3">
-        <div class="produto">
+        <div class="produto" id="sobremesa1" onclick="escolherSobremesa1()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$7,90</p>
         </div>
-        <div class="produto">
+        <div class="produto" id="sobremesa2" onclick="escolherSobremesa2()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$3,90</p>
         </div>
-        <div class="produto">
+        <div class="produto" id="sobremesa3" onclick="escolherSobremesa3()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$2,90</p>
         </div>
-        <div class="produto">
+        <div class="produto" id="sobremesa4" onclick="escolherSobremesa4()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$6,90</p>
-        </div>
-        <div class="produto">
-          <img src="imagens/pudim 1.png" alt="" />
-          <p>Pudim</p>
-          <p>Apenas pudim</p>
-          <p>R$5,90</p>
         </div>
       </section>
     </main>
@@ -121,5 +109,83 @@
         <button>Seleciona os 3 itens para fechar o pedido</button>
       </div>
     </footer>
+    <script>
+      function escolherPrato1() {
+        document.getElementById('prato1').style.borderColor = 'green'
+        document.getElementById('prato2').style.borderColor = 'white'
+        document.getElementById('prato3').style.borderColor = 'white'
+        document.getElementById('prato4').style.borderColor = 'white'
+      }
+
+      function escolherPrato2() {
+        document.getElementById('prato2').style.borderColor = 'green'
+        document.getElementById('prato1').style.borderColor = 'white'
+        document.getElementById('prato3').style.borderColor = 'white'
+        document.getElementById('prato4').style.borderColor = 'white'
+      }
+
+      function escolherPrato3() {
+        document.getElementById('prato3').style.borderColor = 'green'
+        document.getElementById('prato1').style.borderColor = 'white'
+        document.getElementById('prato2').style.borderColor = 'white'
+        document.getElementById('prato4').style.borderColor = 'white'
+      }
+
+      function escolherPrato4() {
+        document.getElementById('prato4').style.borderColor = 'green'
+        document.getElementById('prato1').style.borderColor = 'white'
+        document.getElementById('prato2').style.borderColor = 'white'
+        document.getElementById('prato3').style.borderColor = 'white'
+      }
+
+      function escolherBebida1() {
+        document.getElementById('bebida1').style.borderColor = 'green'
+        document.getElementById('bebida2').style.borderColor = 'white'
+        document.getElementById('bebida3').style.borderColor = 'white'
+        document.getElementById('bebida4').style.borderColor = 'white'
+      }
+      function escolherBebida2() {
+        document.getElementById('bebida2').style.borderColor = 'green'
+        document.getElementById('bebida1').style.borderColor = 'white'
+        document.getElementById('bebida3').style.borderColor = 'white'
+        document.getElementById('bebida4').style.borderColor = 'white'
+      }
+      function escolherBebida3() {
+        document.getElementById('bebida3').style.borderColor = 'green'
+        document.getElementById('bebida1').style.borderColor = 'white'
+        document.getElementById('bebida2').style.borderColor = 'white'
+        document.getElementById('bebida4').style.borderColor = 'white'
+      }
+      function escolherBebida4() {
+        document.getElementById('bebida4').style.borderColor = 'green'
+        document.getElementById('bebida1').style.borderColor = 'white'
+        document.getElementById('bebida2').style.borderColor = 'white'
+        document.getElementById('bebida3').style.borderColor = 'white'
+      }
+      function escolherSobremesa1() {
+        document.getElementById('sobremesa1').style.borderColor = 'green'
+        document.getElementById('sobremesa2').style.borderColor = 'white'
+        document.getElementById('sobremesa3').style.borderColor = 'white'
+        document.getElementById('sobremesa4').style.borderColor = 'white'
+      }
+      function escolherSobremesa2() {
+        document.getElementById('sobremesa2').style.borderColor = 'green'
+        document.getElementById('sobremesa1').style.borderColor = 'white'
+        document.getElementById('sobremesa3').style.borderColor = 'white'
+        document.getElementById('sobremesa4').style.borderColor = 'white'
+      }
+      function escolherSobremesa3() {
+        document.getElementById('sobremesa3').style.borderColor = 'green'
+        document.getElementById('sobremesa1').style.borderColor = 'white'
+        document.getElementById('sobremesa2').style.borderColor = 'white'
+        document.getElementById('sobremesa4').style.borderColor = 'white'
+      }
+      function escolherSobremesa4() {
+        document.getElementById('sobremesa4').style.borderColor = 'green'
+        document.getElementById('sobremesa1').style.borderColor = 'white'
+        document.getElementById('sobremesa2').style.borderColor = 'white'
+        document.getElementById('sobremesa3').style.borderColor = 'white'
+      }
+    </script>
   </body>
 </html>

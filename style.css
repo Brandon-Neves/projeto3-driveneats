@@ -75,6 +75,7 @@ h2 {
 .produto {
   min-width: 172px;
   height: 216px;
+  border: 3px solid white;
   border-radius: 9px;
   background-color: #FFFFFF;
   padding: 1rem;
