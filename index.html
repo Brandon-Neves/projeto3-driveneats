@@ -29,24 +29,44 @@
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$14,90</p>
+          <ion-icon
+            id="check-prato1"
+            name="checkmark-circle-outline"
+            onclick="escolherPrato1()"
+          ></ion-icon>
         </div>
         <div id="prato2" class="produto" onclick="escolherPrato2()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$12,90</p>
+          <ion-icon
+            id="check-prato2"
+            name="checkmark-circle-outline"
+            onclick="escolherPrato2()"
+          ></ion-icon>
         </div>
         <div id="prato3" class="produto" onclick="escolherPrato3()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$15,90</p>
+          <ion-icon
+            id="check-prato3"
+            name="checkmark-circle-outline"
+            onclick="escolherPrato3()"
+          ></ion-icon>
         </div>
         <div id="prato4" class="produto" onclick="escolherPrato4()">
           <img src="imagens/frango_yin_yang 1.png" alt="" />
           <p>Frango Yin Yang</p>
           <p>Um pouco de bata, um pouco de salada</p>
           <p>R$16,90</p>
+          <ion-icon
+            id="check-prato4"
+            name="checkmark-circle-outline"
+            onclick="escolherPrato4()"
+          ></ion-icon>
         </div>
       </section>
       <h2>Agora, sua bebida</h2>
@@ -56,24 +76,44 @@
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$4,90</p>
+          <ion-icon
+            id="check1"
+            name="checkmark-circle-outline"
+            onclick="escolherBebida1()"
+          ></ion-icon>
         </div>
         <div class="produto" id="bebida2" onclick="escolherBebida2()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$4,90</p>
+          <ion-icon
+            id="check2"
+            name="checkmark-circle-outline"
+            onclick="escolherBebida2()"
+          ></ion-icon>
         </div>
         <div class="produto" id="bebida3" onclick="escolherBebida3()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$6,90</p>
+          <ion-icon
+            id="check3"
+            name="checkmark-circle-outline"
+            onclick="escolherBebida3()"
+          ></ion-icon>
         </div>
         <div class="produto" id="bebida4" onclick="escolherBebida4()">
           <img src="imagens/coquinha_gelada 1.png" alt="" />
           <p>Coquinha gelada</p>
           <p>Lata 350ml</p>
           <p>R$3,90</p>
+          <ion-icon
+            id="check4"
+            name="checkmark-circle-outline"
+            onclick="escolherBebida4()"
+          ></ion-icon>
         </div>
       </section>
       <h2>Por fim, sua sobremesa</h2>
@@ -83,24 +123,44 @@
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$7,90</p>
+          <ion-icon
+            id="check-sobremesa1"
+            name="checkmark-circle-outline"
+            onclick="escolherSobremesa1()"
+          ></ion-icon>
         </div>
         <div class="produto" id="sobremesa2" onclick="escolherSobremesa2()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$3,90</p>
+          <ion-icon
+            id="check-sobremesa2"
+            name="checkmark-circle-outline"
+            onclick="escolherSobremesa2()"
+          ></ion-icon>
         </div>
         <div class="produto" id="sobremesa3" onclick="escolherSobremesa3()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$2,90</p>
+          <ion-icon
+            id="check-sobremesa3"
+            name="checkmark-circle-outline"
+            onclick="escolherSobremesa3()"
+          ></ion-icon>
         </div>
         <div class="produto" id="sobremesa4" onclick="escolherSobremesa4()">
           <img src="imagens/pudim 1.png" alt="" />
           <p>Pudim</p>
           <p>Apenas pudim</p>
           <p>R$6,90</p>
+          <ion-icon
+            id="check-sobremesa4"
+            name="checkmark-circle-outline"
+            onclick="escolherSobremesa4()"
+          ></ion-icon>
         </div>
       </section>
     </main>
@@ -112,80 +172,129 @@
     <script>
       function escolherPrato1() {
         document.getElementById('prato1').style.borderColor = 'green'
+        document.getElementById('check-prato1').style.visibility = 'visible'
         document.getElementById('prato2').style.borderColor = 'white'
+        document.getElementById('check-prato2').style.visibility = 'hidden'
         document.getElementById('prato3').style.borderColor = 'white'
+        document.getElementById('check-prato3').style.visibility = 'hidden'
         document.getElementById('prato4').style.borderColor = 'white'
+        document.getElementById('check-prato4').style.visibility = 'hidden'
       }
 
       function escolherPrato2() {
         document.getElementById('prato2').style.borderColor = 'green'
+        document.getElementById('check-prato2').style.visibility = 'visible'
         document.getElementById('prato1').style.borderColor = 'white'
+        document.getElementById('check-prato1').style.visibility = 'hidden'
         document.getElementById('prato3').style.borderColor = 'white'
+        document.getElementById('check-prato3').style.visibility = 'hidden'
         document.getElementById('prato4').style.borderColor = 'white'
+        document.getElementById('check-prato4').style.visibility = 'hidden'
       }
 
       function escolherPrato3() {
         document.getElementById('prato3').style.borderColor = 'green'
+        document.getElementById('check-prato3').style.visibility = 'visible'
         document.getElementById('prato1').style.borderColor = 'white'
+        document.getElementById('check-prato1').style.visibility = 'hidden'
         document.getElementById('prato2').style.borderColor = 'white'
+        document.getElementById('check-prato2').style.visibility = 'hidden'
         document.getElementById('prato4').style.borderColor = 'white'
+        document.getElementById('check-prato4').style.visibility = 'hidden'
       }
 
       function escolherPrato4() {
         document.getElementById('prato4').style.borderColor = 'green'
+        document.getElementById('check-prato4').style.visibility = 'visible'
         document.getElementById('prato1').style.borderColor = 'white'
+        document.getElementById('check-prato1').style.visibility = 'hidden'
         document.getElementById('prato2').style.borderColor = 'white'
+        document.getElementById('check-prato2').style.visibility = 'hidden'
         document.getElementById('prato3').style.borderColor = 'white'
+        document.getElementById('check-prato3').style.visibility = 'hidden'
       }
 
       function escolherBebida1() {
         document.getElementById('bebida1').style.borderColor = 'green'
+        document.getElementById('check1').style.visibility = 'visible'
         document.getElementById('bebida2').style.borderColor = 'white'
+        document.getElementById('check2').style.visibility = 'hidden'
         document.getElementById('bebida3').style.borderColor = 'white'
+        document.getElementById('check3').style.visibility = 'hidden'
         document.getElementById('bebida4').style.borderColor = 'white'
+        document.getElementById('check4').style.visibility = 'hidden'
       }
       function escolherBebida2() {
         document.getElementById('bebida2').style.borderColor = 'green'
+        document.getElementById('check2').style.visibility = 'visible'
         document.getElementById('bebida1').style.borderColor = 'white'
+        document.getElementById('check1').style.visibility = 'hidden'
         document.getElementById('bebida3').style.borderColor = 'white'
+        document.getElementById('check3').style.visibility = 'hidden'
         document.getElementById('bebida4').style.borderColor = 'white'
+        document.getElementById('check4').style.visibility = 'hidden'
       }
       function escolherBebida3() {
         document.getElementById('bebida3').style.borderColor = 'green'
+        document.getElementById('check3').style.visibility = 'visible'
         document.getElementById('bebida1').style.borderColor = 'white'
+        document.getElementById('check1').style.visibility = 'hidden'
         document.getElementById('bebida2').style.borderColor = 'white'
+        document.getElementById('check2').style.visibility = 'hidden'
         document.getElementById('bebida4').style.borderColor = 'white'
+        document.getElementById('check4').style.visibility = 'hidden'
       }
       function escolherBebida4() {
         document.getElementById('bebida4').style.borderColor = 'green'
+        document.getElementById('check4').style.visibility = 'visible'
         document.getElementById('bebida1').style.borderColor = 'white'
+        document.getElementById('check1').style.visibility = 'hidden'
         document.getElementById('bebida2').style.borderColor = 'white'
+        document.getElementById('check2').style.visibility = 'hidden'
         document.getElementById('bebida3').style.borderColor = 'white'
+        document.getElementById('check3').style.visibility = 'hidden'
       }
       function escolherSobremesa1() {
         document.getElementById('sobremesa1').style.borderColor = 'green'
+        document.getElementById('check-sobremesa1').style.visibility = 'visible'
         document.getElementById('sobremesa2').style.borderColor = 'white'
+        document.getElementById('check-sobremesa2').style.visibility = 'hidden'
         document.getElementById('sobremesa3').style.borderColor = 'white'
+        document.getElementById('check-sobremesa3').style.visibility = 'hidden'
         document.getElementById('sobremesa4').style.borderColor = 'white'
+        document.getElementById('check-sobremesa4').style.visibility = 'hidden'
       }
       function escolherSobremesa2() {
         document.getElementById('sobremesa2').style.borderColor = 'green'
+        document.getElementById('check-sobremesa2').style.visibility = 'visible'
         document.getElementById('sobremesa1').style.borderColor = 'white'
+        document.getElementById('check-sobremesa1').style.visibility = 'hidden'
         document.getElementById('sobremesa3').style.borderColor = 'white'
+        document.getElementById('check-sobremesa3').style.visibility = 'hidden'
         document.getElementById('sobremesa4').style.borderColor = 'white'
+        document.getElementById('check-sobremesa4').style.visibility = 'hidden'
       }
       function escolherSobremesa3() {
         document.getElementById('sobremesa3').style.borderColor = 'green'
+        document.getElementById('check-sobremesa3').style.visibility = 'visible'
         document.getElementById('sobremesa1').style.borderColor = 'white'
+        document.getElementById('check-sobremesa1').style.visibility = 'hidden'
         document.getElementById('sobremesa2').style.borderColor = 'white'
+        document.getElementById('check-sobremesa2').style.visibility = 'hidden'
         document.getElementById('sobremesa4').style.borderColor = 'white'
+        document.getElementById('check-sobremesa4').style.visibility = 'hidden'
       }
       function escolherSobremesa4() {
         document.getElementById('sobremesa4').style.borderColor = 'green'
+        document.getElementById('check-sobremesa4').style.visibility = 'visible'
         document.getElementById('sobremesa1').style.borderColor = 'white'
+        document.getElementById('check-sobremesa1').style.visibility = 'hidden'
         document.getElementById('sobremesa2').style.borderColor = 'white'
+        document.getElementById('check-sobremesa2').style.visibility = 'hidden'
         document.getElementById('sobremesa3').style.borderColor = 'white'
+        document.getElementById('check-sobremesa3').style.visibility = 'hidden'
       }
     </script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
   </body>
 </html>
