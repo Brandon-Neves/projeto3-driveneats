@@ -15,6 +15,18 @@ button {
   cursor: pointer;
 }
 
+ion-icon {
+  font-size: 24px;
+  color: transparent;
+  position: relative;
+  bottom: 21px;
+  left: 12rem;
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+
 body {
   max-width: 414px;
   background-color: #E5E5E5;
@@ -49,16 +61,17 @@ main {
   position: relative;
   margin-top: 7rem;
   top: 5rem;
-  left: 1.6rem;
+  left: 0;
 }
 
-.secao-1, .secao-2, .secao-3 {
+.secao1, .secao2, .secao3 {
   display: flex;
   overflow-x: scroll;
   gap: 0 1.3rem;
+  margin-left: 2rem;
 }
 
-.secao-3 {
+.secao3 {
   margin-bottom: 12rem;
 }
 
@@ -70,6 +83,7 @@ h2 {
   letter-spacing: 1.8%;
   margin-top: 4rem;
   margin-bottom: 1.2rem;
+  margin-left: 2rem;
 }
 
 .produto {
@@ -105,7 +119,6 @@ h2 {
   font-size: 1.6rem;
   font-weight: 400;
   color: #000;
-  margin-top: 1.8rem;
 }
 
 footer {
@@ -118,28 +131,34 @@ footer {
   z-index: 1;
 }
 
-button {
+.botao {
   font-size: 2rem;
   line-height: 2.4rem;
   font-weight: 400;
   text-align: center;
-  color: #FFFFFF;
+  color: #989aa2;
+  background-color: #989aa263;
   position: absolute;
   width: 380px;
-  height: 57px;
+  height: 50px;
+  padding: 1rem .5rem .5rem 0;
   top: 10%;
   left: 4%;
   border-radius: 50px;
 }
 
-ion-icon {
-  font-size: 24px;
-  visibility: hidden;
-  position: relative;
-  bottom: 21px;
-  left: 12rem;
+.ativado {
+  background-color: green;
+  cursor: pointer;
   color: white;
-  background: #32B72F;
-  border: none;
-  border-radius: 100%;
+}
+
+
+.selecionado {
+  border: 3px solid green;
+}
+
+.check-selecionado {
+  color: white;
+  background-color: green;
 }
